@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    long long int i,j,k,l,m=0,n=0,t=2000000000;
+    for(i=0;i<5;i++)
+        {
+        scanf("%lld",&k);
+        m+=k;
+        if(n<k)
+            {
+            n=k;
+        }
+        if(t>k)
+            {
+            t=k;
+        }
+    }
+    printf("%lld %lld",m-n,m-t);
+    return 0;
+}
